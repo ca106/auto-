@@ -1,0 +1,7 @@
+services:
+  - type: web
+    plan: free
+    name: ai-wechat-paiban
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
